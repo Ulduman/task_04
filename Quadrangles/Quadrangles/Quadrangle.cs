@@ -56,7 +56,7 @@ namespace Quadrangles
 
             if (ans)
             {
-                return 0;
+                return "0";
             }
             else return "0";
         }
@@ -81,7 +81,7 @@ namespace Quadrangles
 
             if (ans)
             {
-                double a = Math.Pow((Math.Pow(Math.Abs(x[0] - x[2]), 2) + Math.Pow(Math.Abs(x[1] - x[3]), 2)), 0.5), b = Math.Pow((Math.Pow(Math.Abs(x[2] - x[4]), 2) + Math.Pow(Math.Abs(x[3] - x[5]), 2)), 0.5), c = Math.Pow((Math.Pow(Math.Abs(x[6] - x[4]), 2) + Math.Pow(Math.Abs(x[7] - x[5]), 2)), 0.5), d = Math.Pow((Math.Pow(Math.Abs(x[6] - x[0]), 2) + Math.Pow(Math.Abs(x[7] - x[1]), 2)), 0.5);
+                double a = Math.Pow((Math.Pow(Math.Abs(z[0] - z[2]), 2) + Math.Pow(Math.Abs(z[1] - z[3]), 2)), 0.5), b = Math.Pow((Math.Pow(Math.Abs(z[2] - z[4]), 2) + Math.Pow(Math.Abs(z[3] - z[5]), 2)), 0.5), c = Math.Pow((Math.Pow(Math.Abs(z[6] - z[4]), 2) + Math.Pow(Math.Abs(z[7] - z[5]), 2)), 0.5), d = Math.Pow((Math.Pow(Math.Abs(z[6] - z[0]), 2) + Math.Pow(Math.Abs(z[7] - z[1]), 2)), 0.5);
                 return a + b + c + d;
             }
             else return 0;

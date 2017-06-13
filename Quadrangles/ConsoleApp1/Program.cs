@@ -13,10 +13,16 @@ namespace ConsoleApp1
         {
             Quadrangle q = new Quadrangle();
             double[] x;
-            string str;
-            Console.Write("Введите координаты четырехугольника через пробел");
-            str = Console.ReadLine;
-            x = str.Split(" ");
+            string[] str;
+            Console.Write("Введите координаты четырехугольника через пробел:\n");
+            str = Console.ReadLine().Split(' ');
+            x = new double[str.Length];
+            for (int i = 0; i < str.Length; i++)
+            {
+                x[i] = Convert.ToDouble(str[i]);
+            }
+            Console.WriteLine("Периметр:" + q.CalcPerimetrQuad(x) + " Площадь: " + q.CalcAreaQuad(x));
+            Console.ReadKey();
         }
     }
 }
