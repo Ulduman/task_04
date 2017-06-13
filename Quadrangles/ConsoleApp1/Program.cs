@@ -21,7 +21,7 @@ namespace ConsoleApp1
             {
                 x[i] = Convert.ToDouble(str[i]);
             }
-            Console.WriteLine("Периметр:" + q.CalcPerimetrQuad(x) + " Площадь: " + q.CalcAreaQuad(x));
+            Console.WriteLine("Периметр: {0:f} Площадь: {1:f}",q.CalcPerimetrQuad(x), q.CalcAreaQuad(x));
             Console.ReadKey();
         }
     }

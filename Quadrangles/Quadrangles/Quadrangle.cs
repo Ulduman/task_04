@@ -33,9 +33,9 @@ namespace Quadrangles
         {
                 double[] z = (double[])x.Clone();
 
-                double ax = z[0] - z[2], bx = z[0] - z[4], cx = z[0] - z[6], ay = z[1] - z[3], by = z[1] - z[5], cy = z[1] - z[7], cosab = Math.Abs(ax * bx + ay * by) / (Math.Sqrt(Math.Pow(ax, 2) + Math.Pow(ay, 2)) * Math.Sqrt(Math.Pow(bx, 2) + Math.Pow(by, 2)));
-                double cosac = Math.Abs(ax * cx + ay * cy) / (Math.Sqrt(Math.Pow(ax, 2) + Math.Pow(ay, 2)) * Math.Sqrt(Math.Pow(cx, 2) + Math.Pow(cy, 2)));
-                double cosbc = Math.Abs(cx * bx + cy * by) / (Math.Sqrt(Math.Pow(bx, 2) + Math.Pow(by, 2)) * Math.Sqrt(Math.Pow(cx, 2) + Math.Pow(cy, 2)));
+                double ax = z[0] - z[2], bx = z[0] - z[4], cx = z[0] - z[6], ay = z[1] - z[3], by = z[1] - z[5], cy = z[1] - z[7], cosab = (ax * bx + ay * by) / (Math.Sqrt(Math.Pow(ax, 2) + Math.Pow(ay, 2)) * Math.Sqrt(Math.Pow(bx, 2) + Math.Pow(by, 2)));
+                double cosac = (ax * cx + ay * cy) / (Math.Sqrt(Math.Pow(ax, 2) + Math.Pow(ay, 2)) * Math.Sqrt(Math.Pow(cx, 2) + Math.Pow(cy, 2)));
+                double cosbc = (cx * bx + cy * by) / (Math.Sqrt(Math.Pow(bx, 2) + Math.Pow(by, 2)) * Math.Sqrt(Math.Pow(cx, 2) + Math.Pow(cy, 2)));
 
                 if (cosab < cosac && cosab < cosbc)
                 {
